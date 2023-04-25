@@ -58,12 +58,14 @@ $ docker-compose up
 Recreating hello-world-app-python-1 ... done
 Recreating hello-world-app-web-1    ... done
 Attaching to hello-world-app_python_1, hello-world-app_web_1
-python_1  | **Hello World from Python!**
+python_1  | Hello World from Python!
 web_1     | AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
 web_1     | AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.20.0.3. Set the 'ServerName' directive globally to suppress this message
 web_1     | [Tue Apr 25 16:06:47.622069 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.48 (Debian) PHP/8.0.9 configured -- resuming normal operations
 web_1     | [Tue Apr 25 16:06:47.622263 2023] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
 hello-world-app_python_1 exited with code 0
+
+** "Hello World from Python!" is printed in above output **
 ```
 ## Use curl to check web server is working
 ```
