@@ -1,0 +1,12 @@
+services:
+  python:
+    build:
+      context: python/app
+  web:
+    build:
+      context: apache-php/app
+      target: builder
+    ports: 
+      - '80:80'
+    volumes:
+      - ./apache-php/app:/var/www/html/
